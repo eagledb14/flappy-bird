@@ -49,7 +49,7 @@ func newRect(w,h int, color color.Color) image.Image {
 	return rect
 }
 
-func giveBorder(img *ebiten.Image) {
+func drawBorder(img *ebiten.Image) {
 	w := img.Bounds().Max.X
 	h := img.Bounds().Max.Y
 	color := color.RGBA{255,0,0,255}
@@ -61,7 +61,6 @@ func giveBorder(img *ebiten.Image) {
 	}
 
 	// left and right
-
 	for x := 0; x < h; x++ {
 		img.Set(x, 0, color)
 		img.Set(x, w - 1, color)
@@ -84,7 +83,7 @@ func loadImage(path string) *ebiten.Image {
 }
 
 func main() {
-	ebiten.SetWindowSize(360 * 1, 643 * 1)
+	ebiten.SetWindowSize(360, 643)
 	ebiten.SetWindowTitle("Flappy")
 	game := &Game{}
 

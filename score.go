@@ -26,23 +26,23 @@ func newScore() *Score {
 	for val := range 10 {
 		switch val {
 		case 0:
-		      imgs = append(imgs, getDigit(img, 0,0,30, 45))
+			imgs = append(imgs, getDigit(img, 0,0,30, 45))
 		case 1:
-		      imgs = append(imgs, getDigit(img, 31, 0, 48, 45))
+			imgs = append(imgs, getDigit(img, 31, 0, 48, 45))
 		case 2:
-		      imgs = append(imgs, getDigit(img, 50, 0, 80, 45))
+			imgs = append(imgs, getDigit(img, 50, 0, 80, 45))
 		case 3:
-		      imgs = append(imgs, getDigit(img, 80, 0, 110, 45))
+			imgs = append(imgs, getDigit(img, 80, 0, 110, 45))
 		case 4:
-		      imgs = append(imgs, getDigit(img, 110, 0, 140, 45))
+			imgs = append(imgs, getDigit(img, 110, 0, 140, 45))
 		case 5:
-		      imgs = append(imgs, getDigit(img, 0, 45, 30, 90))
+			imgs = append(imgs, getDigit(img, 0, 45, 30, 90))
 		case 6:
-		      imgs = append(imgs, getDigit(img, 30, 45, 60, 90))
+			imgs = append(imgs, getDigit(img, 30, 45, 60, 90))
 		case 7:
-		      imgs = append(imgs, getDigit(img, 60, 45, 90, 90))
+			imgs = append(imgs, getDigit(img, 60, 45, 90, 90))
 		case 8:
-		      imgs = append(imgs, getDigit(img, 90, 45, 120, 90))
+			imgs = append(imgs, getDigit(img, 90, 45, 120, 90))
 		case 9:
 			imgs = append(imgs, getDigit(img, 120, 45, 150, 90))
 		default:
